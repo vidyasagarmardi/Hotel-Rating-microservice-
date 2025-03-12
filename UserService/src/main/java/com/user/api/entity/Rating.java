@@ -7,6 +7,7 @@ public class Rating {
 	private long hotelId;
 	private double rating;
 	private String feedback;
+	private Hotel hotel;
 	public long getId() {
 		return id;
 	}
@@ -36,6 +37,12 @@ public class Rating {
 	}
 	public void setFeedback(String feedback) {
 		this.feedback = feedback;
+	}
+	public Hotel getHotel() {
+		return hotel;
+	}
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
 	}
 
 }
